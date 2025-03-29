@@ -47,5 +47,28 @@ export const sampleProducts: Product[] = [
             description: "Lightweight and portable EV charger perfect for on-the-go charging with universal compatibility.",
             rating: 4.5,
             numReviews: 310,
+        },{
+            name: "EcoCharge Pro 150",
+            slug: "ecocharge-pro-150",
+            image: ".././public/images/pd11 (3).png",
+            category: "Fast Charger",
+            brand: "EcoCharge",
+            price: 29999,
+            countInStock: 10,
+            description: "A high-performance fast charger suitable for all EVs, with a sleek design and advanced safety features.",
+            rating: 4.8,
+            numReviews: 230,
+        },
+        {
+            name: "TurboCharger X75",
+            slug: "turbocharger-x75",
+            image: ".././public/images/pd12 (1).png",
+            category: "Home Charger",
+            brand: "TurboTech",
+            price: 18999,
+            countInStock: 25,
+            description: "Compact and efficient home charger with smart energy management and app connectivity.",
+            rating: 4.6,
+            numReviews: 120,
         }
 ]
