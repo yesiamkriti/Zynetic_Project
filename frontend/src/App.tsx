@@ -1,5 +1,7 @@
-import { sampleProducts } from './data'
+import Footer from './components/footer'
 import { Navbar, Nav, Container } from 'react-bootstrap'
+import BootstrapCarousel from './components/slider'
+import { Outlet } from 'react-router-dom'
 function App() {
   return (
     <>
@@ -26,51 +28,14 @@ function App() {
             </Container>
           </Navbar>
         </header>
+        <BootstrapCarousel />
         <main>
           <Container className="mt-4">
-            <h1 className="text-center mb-4">Welcome to Zynetics EV</h1>
-            <div className="row">
-              {sampleProducts.map((product) => (
-                <div key={product.slug} className="col-md-4 mb-4">
-                  <div className="card hover-shadow card-custom">
-                    <img
-                      src={product.image}
-                      className="card-img-top"
-                      alt={product.name}
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="card-title">{product.name}</h5>
-                      <p className="card-text">{product.description}</p>
-                      <p className="card-text">
-                        <strong>Price: &#8377;{product.price}</strong>
-                      </p>
-                      <a href="#" className="btn btn-primary">
-                        Add to Cart 
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+           <Outlet/>
           </Container>
         </main>
-        <footer className="mt-auto bg-dark text-white">
-          <div className="text-center py-3">
-            <p>&copy; 2025 Zynetics EV. All rights reserved.</p>
-            <ul className="list-inline">
-              <li className="list-inline-item">
-                <a href="#privacy">Privacy Policy</a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#terms">Terms of Service</a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#support">Support</a>
-              </li>
-            </ul>
-          </div>
-        </footer>
       </div>
+      <Footer />
     </>
   )
 }

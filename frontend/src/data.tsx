@@ -72,3 +72,8 @@ export const sampleProducts: Product[] = [
             numReviews: 120,
         }
 ]
+export const sliderImages: string[] = [
+    ".././public/images/pd14 (1).png",
+    ".././public/images/pd14 (3).png",
+    ".././public/images/pd14 (2).png",
+]
