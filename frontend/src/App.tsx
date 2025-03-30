@@ -20,8 +20,7 @@ function App() {
                 </Nav>
                 <Nav className="ml-auto">
                   <Nav.Link href="#cart">Cart</Nav.Link>
-                  <Nav.Link href="#login">Login</Nav.Link>
-                  <Nav.Link href="#signup">Sign Up</Nav.Link>
+                  <Nav.Link href="#signup">SignIn/LogIn</Nav.Link>
                   <Nav.Link href="#profile">Profile</Nav.Link>
                 </Nav>
               </Navbar.Collapse>

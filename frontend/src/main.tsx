@@ -6,6 +6,10 @@ import './index.css'
 import App from './App.tsx'
 import Homepage from './pages/Homepage.tsx'
 import ProductPage from './pages/Productpage.tsx'
+import axios from 'axios'
+
+  axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : '/'
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
