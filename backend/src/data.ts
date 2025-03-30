@@ -9,7 +9,7 @@ export const sampleProducts: Product[] = [
             price: 29999,
             countInStock: 10,
             description: "A high-performance fast charger suitable for all EVs, with a sleek design and advanced safety features.",
-            rating: 4.8,
+            rating: 4,
             numReviews: 230,
         },
         {
@@ -21,7 +21,7 @@ export const sampleProducts: Product[] = [
             price: 18999,
             countInStock: 25,
             description: "Compact and efficient home charger with smart energy management and app connectivity.",
-            rating: 4.6,
+            rating: 4.5,
             numReviews: 120,
         },
         {
@@ -33,7 +33,7 @@ export const sampleProducts: Product[] = [
             price: 75999,
             countInStock: 5,
             description: "Ideal for commercial use, this charger offers multiple charging ports and robust durability.",
-            rating: 4.9,
+            rating: 5,
             numReviews: 85,
         },
         {
@@ -56,7 +56,7 @@ export const sampleProducts: Product[] = [
             price: 29999,
             countInStock: 10,
             description: "A high-performance fast charger suitable for all EVs, with a sleek design and advanced safety features.",
-            rating: 4.8,
+            rating: 3,
             numReviews: 230,
         },
         {
@@ -66,10 +66,10 @@ export const sampleProducts: Product[] = [
             category: "Home Charger",
             brand: "TurboTech",
             price: 18999,
-            countInStock: 25,
+            countInStock: 0,
             description: "Compact and efficient home charger with smart energy management and app connectivity.",
-            rating: 4.6,
-            numReviews: 120,
+            rating: 2.5,
+            numReviews: 12,
         }
 ]
 export const sliderImages: string[] = [
