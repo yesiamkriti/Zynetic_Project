@@ -48,8 +48,8 @@ export const sampleProducts: Product[] = [
             rating: 4.5,
             numReviews: 310,
         },{
-            name: "EcoCharge Pro 150",
-            slug: "ecocharge-pro-150",
+            name: "EcoCharge Pro 155",
+            slug: "ecocharge-pro-155",
             image: ".././public/images/pd11 (3).png",
             category: "Fast Charger",
             brand: "EcoCharge",
@@ -60,8 +60,8 @@ export const sampleProducts: Product[] = [
             numReviews: 230,
         },
         {
-            name: "TurboCharger X75",
-            slug: "turbocharger-x75",
+            name: "TurboCharger X78",
+            slug: "turbocharger-x78",
             image: ".././public/images/pd12 (1).png",
             category: "Home Charger",
             brand: "TurboTech",

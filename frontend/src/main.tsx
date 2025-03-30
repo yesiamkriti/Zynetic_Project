@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react'
+import { StrictMode } from 'react'
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} element={<Homepage />} />
-      <Route path="product/:slug" element={<ProductPage />} />
+      <Route path="/products/:slug" element={<ProductPage />} />
     </Route>
   )
 )
