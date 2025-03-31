@@ -1,4 +1,7 @@
 import { Product } from "./types/Product";
+import bcrypt from 'bcryptjs'
+import { User } from './models/userModel'
+
 export const sampleProducts: Product[] = [
         {
             name: "EcoCharge Pro 150",
@@ -71,9 +74,19 @@ export const sampleProducts: Product[] = [
             rating: 2.5,
             numReviews: 12,
         }
-]
-export const sliderImages: string[] = [
-    ".././public/images/pd14 (1).png",
-    ".././public/images/pd14 (3).png",
-    ".././public/images/pd14 (2).png",
+    ]
+
+export const sampleUsers: User[] = [
+  {
+    name: 'Zynetic',
+    email: 'admin@example.com',
+    password: bcrypt.hashSync('123456'),
+    isAdmin: true,
+  },
+  {
+    name: 'ZyneticUser',
+    email: 'user@example.com',
+    password: bcrypt.hashSync('123456'),
+    isAdmin: false,
+  },
 ]
