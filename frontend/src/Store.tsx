@@ -22,7 +22,6 @@ const initialState: AppState = {
   cart: {
     cartItems: JSON.parse(localStorage.getItem('cartItems') || '[]'),
     shippingAddress: JSON.parse(localStorage.getItem('shippingAddress') || '{}'),
-    paymentMethod: localStorage.getItem('paymentMethod') || 'PayPal',
     itemsPrice: 0,
     shippingPrice: 0,
     taxPrice: 0,
@@ -88,7 +87,6 @@ function reducer(state: AppState, action: Action): AppState {
         userInfo: null,
         cart: {
           cartItems: [],
-          paymentMethod: 'PayPal',
           shippingAddress: {
             fullName: '',
             address: '',
