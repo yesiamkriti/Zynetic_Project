@@ -8,8 +8,9 @@ import seedRouter from './routers/seedRouter'
 
 dotenv.config()
 const app = express()
-
-const MONGODB_URI = process.env.MONGO_URI || "mongodb+srv://kritijulia:zynetics123@zyneticscol.3rjran9.mongodb.net/"
+const MONGODB_URI =
+  process.env.MONGO_URI ||
+  'mongodb+srv://kritijulia'
 mongoose.set('strictQuery', true)
 mongoose
   .connect(MONGODB_URI)
@@ -20,7 +21,6 @@ mongoose
     console.log('error mongodb')
   })
 
-
 app.use(
   cors({
     credentials: true,
@@ -28,8 +28,7 @@ app.use(
   })
 )
 
-app.use('/api/seed',seedRouter);
-
+app.use('/api/seed', seedRouter)
 
 app.get('/api/products', (req: Request, res: Response) => {
   res.json(sampleProducts)
@@ -39,7 +38,7 @@ app.get('/api/products/:slug', (req: Request, res: Response) => {
   res.json(sampleProducts.find((x) => x.slug === req.params.slug))
 })
 
-const PORT = 4000
+const PORT = process.env.PORT
 app.listen(PORT, () => {
   console.log(`server started at http://localhost:${PORT}`)
 })
