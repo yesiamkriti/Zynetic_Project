@@ -7,10 +7,11 @@ This is a Full Stack Developer Assignment assigned by **Zynetic Company**
 (A Fast-growing Charge Point Operator revolutionizing EV charging infrastructure in India and Dubai)
 
 ## 📸 Project Screenshots:
-# first page
+
 ![Screenshot 1](<frontend/public/images/readme1%20(1).png>)
 ![Screenshot 1](<frontend/public/images/readme1%20(2).png>)
 ![Screenshot 2](<frontend/public/images/readme1%20(3).png>)
+![Screenshot 2](<frontend/public/images/readme1%20().png>)
 
 ---
 
@@ -71,6 +72,7 @@ This is a Full Stack Developer Assignment assigned by **Zynetic Company**
 ```sh
 cd frontend
 npm install
+npm run dev
 ```
 
 #### Backend:
@@ -78,18 +80,5 @@ npm install
 ```sh
 cd backend
 npm install
-```
-
-### 3. Run the Application
-
-#### Frontend:
-
-```sh
-npm run dev
-```
-
-#### Backend:
-
-```sh
 npm run dev
 ```
