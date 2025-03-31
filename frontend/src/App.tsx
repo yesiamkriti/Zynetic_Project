@@ -1,12 +1,12 @@
 import Footer from './components/footer'
-import { Navbar, Nav, Container,Button } from 'react-bootstrap'
+import { Navbar, Nav, Container,Button,Badge } from 'react-bootstrap'
 import BootstrapCarousel from './components/slider'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import { useEffect,useContext} from 'react'
 import {Store} from './Store'
 
 function App() {
-  const{state:{mode},dispatch} = useContext(Store)
+  const{state:{mode, cart},dispatch} = useContext(Store)
   useEffect(() => {
     document.body.setAttribute('data-bs-theme', mode)
   }, [mode])
@@ -36,7 +36,14 @@ function App() {
                     className={mode === 'light' ? 'fa fa-sun' : 'fa fa-moon'}
                   ></i>
                 </Button> 
-                  <Nav.Link href="#cart">Cart</Nav.Link>
+                   <Link to="/cart" className="nav-link">
+               Cart
+               {cart.cartItems.length > 0 && (
+                 <Badge pill bg="danger">
+                   {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                 </Badge>
+               )}
+             </Link>
                   <Nav.Link href="#signup">SignIn/LogIn</Nav.Link>
                   <Nav.Link href="#profile">Profile</Nav.Link>
                 </Nav>
