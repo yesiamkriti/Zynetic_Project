@@ -13,7 +13,7 @@ import Homepage from './pages/Homepage.tsx'
 import ProductPage from './pages/ProductPage'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import { StoreProvider } from 'Store.tsx'
+import { StoreProvider } from './Store.tsx'
 
 const queryClient = new QueryClient();
 

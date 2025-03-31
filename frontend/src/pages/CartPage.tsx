@@ -19,7 +19,7 @@ export default function CartPage() {
 
   const updateCartHandler = (item: CartItem, quantity: number) => {
     if (item.countInStock < quantity) {
-      toast.warn('Sorry. Product is out of stock')
+      toast.warning('Sorry. Product is out of stock')
       return
     }
     dispatch({
