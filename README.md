@@ -8,8 +8,8 @@ This is a Full Stack Developer Assignment assigned by **Zynetic Company**
 
 ## 📸 Project Screenshots:
 
-![Screenshot 1](frontend/public/images/readme1 (2).png)
-![Screenshot 2](frontend/public/images/readme1 (3).png)
+![Screenshot 1](<frontend/public/images/readme1%20(2).png>)
+![Screenshot 2](<frontend/public/images/readme1%20(3).png>)
 
 ---
 
